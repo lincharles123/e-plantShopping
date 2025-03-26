@@ -311,6 +311,8 @@ function ProductList({ onHomeClick }) {
                                     <div className="product-card" key={plantIndex}>
                                         <img className="product-image" src={plant.image} alt={plant.name} />
                                         <div className="product-title">{plant.name}</div>
+                                        <div className="product-price">{plant.cost}</div>
+                                        <div className="product-description">{plant.description}</div>
                                         {
                                             addedToCart[plant.name] ? 
                                             <button className="product-button added-to-cart">Added to Cart</button>
